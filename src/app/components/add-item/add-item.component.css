@@ -1,0 +1,35 @@
+.add-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.add-item-container input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+/* Estilo atualizado para o botão adicionar com cor de fundo */
+button.adicionar {
+    background-color: #007bff;  /* Azul */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button.adicionar:hover {
+    background-color: #0056b3;  /* Azul mais escuro ao passar o mouse */
+}
+
+button.adicionar:active {
+    background-color: #004494;  /* Azul ainda mais escuro ao clicar */
+}

@@ -1,0 +1,49 @@
+.item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Garante que os elementos fiquem espaçados */
+}
+
+.item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.item span {
+    flex: 1; /* Faz o texto ocupar o espaço restante */
+    margin-right: 10px;
+    text-align: left;
+}
+
+.item button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.item button:hover {
+    color: #007bff;
+}
+
+/* Flexbox garante alinhamento horizontal */
+.item .buttons-container {
+    display: flex;
+    gap: 10px; /* Espaço entre os botões de editar e remover */
+}
+
+.item.comprado span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    .item {
+        flex-direction: row; /* Garante que os itens permaneçam alinhados na horizontal em telas pequenas */
+        justify-content: space-between;
+    }
+}
